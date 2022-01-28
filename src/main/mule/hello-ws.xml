@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="be846cfb-4fe1-4617-a11e-792bbdbf08f4" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
-	<flow name="Copy_of_GETemp" doc:id="8a6bb779-6a9a-43ff-b78e-d5c5a721b275" >
+	<flow name="helloFlow" doc:id="8a6bb779-6a9a-43ff-b78e-d5c5a721b275" >
 		<http:listener doc:name="hello" doc:id="4d8e1d01-692f-4547-a11b-ba17e05b1294" config-ref="HTTP_Listener_config" path="/hello" allowedMethods="GET" />
 		<set-payload value="Hello" doc:name="Set Payload" doc:id="6c226d2e-28e9-4cf1-a510-f6013bb34226" />
 	</flow>
